@@ -3,6 +3,22 @@ li a {
 }
 
 body {
-    background: white url("images/background.jpg") no-repeat right top;
-    background-size: 1920px 1080px;
+    background-color: tomato;
+}
+
+.answers {
+    font-size: 30px;
+
+}
+
+a {
+    font-size: 30px;
+}
+
+li {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 300%;
 }

@@ -9,8 +9,8 @@
 <form action="{% url 'polls:vote' question.id %}" method="post">
 {% csrf_token %}
 {% for choice in question.choice_set.all %}
-    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+    <input style="height: 15px; width: 15px" type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    <label class="answers" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br /><br />
 {% endfor %}
-<input type="submit" value="Vote" />
+<input style="height: 30px; width: 200px" type="submit" value="Vote" />
 </form>
